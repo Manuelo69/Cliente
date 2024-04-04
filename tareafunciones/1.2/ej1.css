@@ -1,0 +1,54 @@
+form {
+    width: 550px;
+    margin: 0 0 0 0 ;
+    padding: 50px 60px;
+    background-color: #2d2d2d;
+    border-radius: 20px;
+    }
+    fieldset {
+    padding: 0 20px 20px;
+    margin: 0 0 30px ;
+    border: 2px solid #ffffff;
+    background: #B8B8B8 ;
+    border-radius: 10px;
+    }
+    body{
+        background: antiquewhite;
+    }
+    h1{
+    color: black;
+    background: #0070ff;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    margin-left: 100px;
+    width: 10em;
+    border: 2px solid #0000ff;
+    border-radius: 5px;  
+    }
+    legend {
+    color: #000000;
+    background: #0070ff;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+    width: 10em;
+    border: 2px solid #808080;
+    border-radius: 5px;
+    }
+    label {
+    display: block;
+    float: left;
+    clear: left;
+    text-align: left;
+    width: 100%;
+    padding: .4em 0 0 0;
+    margin: .15em 0 0 0;
+    }
+
+    .array{
+        border: 2px solid black;
+        height: 30px;
+        
+    }

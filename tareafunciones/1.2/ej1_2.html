@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>practica</title>
+    <link href="ej1.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+    <script type="text/javascript" src="1_3.js"></script>
+</head>
+
+<body>
+    <form name="Formulario" method="post" action="Ejercicio2_1.html">
+        <fieldset>
+            <legend>Apuesta</legend>
+            <label>Cash:
+                <input type="text" readonly id="cant">
+            </label>
+            <br><br>
+            <label> Introduce la cantidad de tu apuesta(empiezas con 50):
+                <input type="number" id="din" autofocus required>
+            </label>
+            <br><br>
+            <label> Introduce a que número le apuestas entre 1 y 6:
+                <input type="number" id="num" required min="1" max="6">
+            </label>
+            <br><br>
+            <label>
+                <input type="button" value="apostar" id="boton">
+            </label>
+            <label>
+                <input type="reset">
+            </label>
+            <textarea name="1" id="area" cols="30" rows="10"></textarea>
+            <br><br>
+            <label class="array">
+                1
+            </label>
+            <label class="array">
+                2
+            </label>
+            <label class="array">
+                3
+            </label>
+            <label class="array">
+                4
+            </label>
+            <label class="array">
+                5
+            </label>
+            <label class="array">
+                6
+            </label>
+            <br><br>
+            <input type="button" value="Mostrar estadisticas" id="boton2">
+        </fieldset>
+    </form>
+</body>
+
+</html>

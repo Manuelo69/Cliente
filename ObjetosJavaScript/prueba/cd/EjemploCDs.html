@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Attributes example</title>
+        <script type="text/javascript" src="cd_musica.js"></script>
+        <script type="text/javascript" src="ejemplocds.js"></script>
+        <link rel="stylesheet" href="ej1.css">
+        <style>
+            textarea{
+                height: 300px;
+                width: 250px;
+                margin-top: 10px;
+            }
+            div{
+                height: 300px;
+                width: 600px; 
+            }
+        </style>
+    </head>
+    <body>
+        Titulo del cd: <input type="text" id="tituloCD"/>
+        <br><br>
+        Nombre del grupo: <input type="text" id="nomGrupo"/>
+        <br><br>
+        Fecha del cd: <input type="date" id="fechaCD"/>
+        <br><br>
+        <button class="submit" id="botonIntroducir">Introducir CD</button>
+        <button class="submit" id="botonVisualizar">Visualizar CDs</button><br>
+        <button class="submit" id="botonValorCD" disabled>Valor del CD</button><br>
+        <input type="button" id="botonCrearDiscos" value="Crear Discos Graficos"><br>
+        <textarea id="resultado" readonly></textarea> <br>
+        <div id="espacio"></div>
+     
+
+    </body>
+</html>

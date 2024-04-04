@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio individual</title>
+    <script type="text/javascript" src="pizarra.js"></script>
+    <link rel="stylesheet" href="ej1.css">
+    <style>
+        .bordesPeques {
+            border: 2px black solid;
+        }
+        label{
+            float: left;
+            margin-top: 30px;
+            font-size: 25px;
+        }
+
+        .herramientas {
+            border: 4px black solid;
+            clear: both;
+            float: left;
+            margin-left: 1000px;
+            margin-top: -500px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="bordesGrande" id="zonaDibujo"></section>
+    <label>Estado del pincel: PINCEL DESACTIVADO</label>
+    <section class="herramientas">
+        Elige un color<input type="color" id="colores">
+        <br><br>
+        <input type="button" id="boton1" value="Pincel borrador">
+        <br><br>
+        <input type="button" id="boton2" value="Borrar todo">
+        <br><br>
+        <input type="button" id="boton3" value="volver a pintar">
+    </section>
+
+</body>
+
+</html>

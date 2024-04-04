@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>practica</title>
+    <link href="ej1.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+    <script type="text/javascript" src="ej1_2.js"></script>
+</head>
+
+<body>
+    <form name="Formulario" method="post" action="1_3.html">
+        <fieldset>
+            <legend>Reserva hotel</legend>
+            <label> Numero de noches:
+                <input type="number" id="noches" autofocus min="1">
+            </label>
+            <br><br>
+            <label>Selecciona el tipo de hotel:
+                <select name="hoteles" id="estrellas">
+                <option value="1">1 estrella(30 euros)</option>
+                <option value="2">2 estrellas(60 euros)</option>
+                <option value="3">3 estrellas(90 euros)</option>
+                <option value="4">4 estrellas(120 euros)</option>
+                <option value="5">5 estrellas(150 euros)</option>
+                </select>
+                
+            </label>
+            <br><br>
+            <label>
+                <input type="button" value="Mostrar coste" id="boton">
+            </label>
+            <label>
+                <input type="reset">
+            </label>
+            <br><br>
+            <label>
+                <input type="text" readonly id="res">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Reserva vuelo</legend>
+            <label> selecciona opcion:
+                <select name="viajes" id="ida">
+                    <option value="10">Solo ida</option>
+                    <option value="11">ida y vuelta</option>
+                    </select>
+            </label>
+            <br><br>
+            <label>Selecciona el destino:
+                <select name="viajes" id="vuelos">
+                <option value="6">Madrid 200</option>
+                <option value="7">Tokio 500</option>
+                <option value="8">Berlin 70</option>
+                <option value="9">Belgica 37</option>
+                </select>
+                <br>
+                Madrid: <meter min="0" max="100" low="25" high="25" optimum="100" value="15" id="meter2"></meter>
+                <br>
+                Tokio: <meter min="0" max="100" low="25" high="25" optimum="100" value="20" id="meter3"></meter>
+                <br>
+                Berlin: <meter min="0" max="100" low="25" high="25" optimum="100" value="10" id="meter4"></meter>
+                <br>
+                Belgica: <meter min="0" max="100" low="25" high="25" optimum="100" value="12" id="meter5"></meter>
+            </label>
+            <br><br>
+            <label>
+                <input type="button" value="Mostrar coste" id="boton2">
+            </label>
+            <label>
+                <input type="reset">
+            </label>
+            <br><br>
+            <label>
+                <input type="text" readonly id="res2">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Reserva coche</legend>
+            <label> Numero de coches
+                <input type="number" id="noches" autofocus min="1">
+            </label>
+            <br><br>          
+                <label> Numero de días
+                    <input type="number" id="dia" autofocus min="1">
+                </label>
+            <br><br>
+            <label>
+                <input type="button" value="Mostrar coste" id="boton3">
+            </label>
+            <label>
+                <input type="reset">
+            </label>
+            <br><br>
+            <label>
+                <input type="text" readonly id="res3">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Calculo final</legend>
+            <label>
+                <input type="button" value="Mostrar coste final" id="boton4">
+            </label>
+            <br><br>
+            <label>
+                <input type="text" readonly id="res4">
+            </label>
+        </fieldset>
+    </form>
+</body>
+
+</html>

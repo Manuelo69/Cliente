@@ -1,0 +1,169 @@
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Array</title>
+        <link href="Est.css" rel="stylesheet" type="text/css">
+        <meta name="autor" content="Manuel Llano Rebanal">
+        <meta name="Copyright" content="free">
+        <meta name="language" content="es">
+        <script type="text/javascript" src="array.js"></script>
+    </head>
+
+    <body>
+        <script>
+            //Declarar arrays
+            var cursos = new Array("DAW1", "DAW2", "DAM1", "DAM2");
+            var horarios = new Array("Tarde", "Tarde", "Tarde", "Tarde", "Tarde", "Tarde");
+            //For comun
+
+            for (f = 0; f < cursos.length; f++) {
+                document.write(cursos[f] + '-</br>');
+            }
+
+            /* Usar for in*/
+            document.write("</br>");
+            for (const indice in cursos) {
+                document.write(cursos[indice] + ' / ' + indice + " </br>");
+            }
+            document.write("</br>");
+
+            //Utilizar el for of
+            for (const valor of cursos) {
+                document.write(valor + "</br>");
+            }
+            document.write("</br>");
+
+            //For each corto
+            cursos.forEach(function (element) {
+                document.write(element + "</br>");
+            });
+            document.write("</br>");
+
+            //for each largo
+            cursos.forEach(function (valor, indice, array) {
+                document.write(`En el indice ${indice} el valor es ${valor}` + "</br>")
+            });
+            document.write("</br>");
+
+            //utilizar metodo push, devuelve longitud y añade elementos
+            var añadir = cursos.push("Asir1", "Asir2");
+            document.write(añadir);
+            document.write("</br>");
+            cursos.forEach(function (valor, indice, array) {
+                document.write(`En el indice ${indice} el valor es ${valor}` + "</br>")
+            });
+            document.write("</br>");
+
+            //utilizar concat para concatenar dos arrays
+            var concatenación = cursos.concat(horarios);
+            for (const valor of concatenación) {
+                document.write(valor + "</br>");
+            }
+            document.write("</br>");
+
+            //utilizar metodo Join concatenando en una sola cadena
+            document.write(cursos.join(" - "));
+
+            //reverse invierte el orden
+            document.write("</br>");
+            var invertido = cursos.reverse();
+            for (const indice in invertido) {
+                document.write(invertido[indice] + ' / ' + indice + " </br>");
+            }
+            document.write("</br>");
+
+            //metodo unshift para añadir nuevos elementos al inicio del array y devuelve longitud
+            var añadir = cursos.unshift("Economia1", "Economia2");
+            document.write(añadir);
+            document.write("</br>");
+            cursos.forEach(function (valor, indice, array) {
+                document.write(`En el indice ${indice} el valor es ${valor}` + "</br>")
+            });
+
+            //Metodo shift que elimina el primer elemento
+            document.write("</br>");
+            var eliminado = cursos.shift();
+            document.write("elemento eliminado: " + eliminado + "</br>");
+            cursos.forEach(function (valor, indice, array) {
+                document.write(`En el indice ${indice} el valor es ${valor}` + "</br>")
+            });
+            document.write("</br>");
+
+            //Metodo pop que elimina el ultimo elemento del array y lo devuelve
+            var eliminado = cursos.pop();
+            document.write("elemento eliminado: " + eliminado + "</br>");
+            cursos.forEach(function (valor, indice, array) {
+                document.write(`En el indice ${indice} el valor es ${valor}` + "</br>")
+            });
+            document.write("</br>");
+
+            //Metodo slice para recorrer el array entre dos posiciones que indiquemos
+            var recortado = cursos.slice(2, 5);
+            for (const valor of recortado) {
+                document.write(valor + "</br>");
+            }
+            document.write("</br>");
+
+            //Metodo sort para ordenador los arrays alfabeticamente
+            var ordenado = cursos.sort();
+            for (const valor of ordenado) {
+                document.write(valor + "</br>");
+            }
+            document.write("</br>");
+
+            //Metodo Splice para borrar, sustituir o añadir elementos
+            //Borrar elementos: primer num, a partir de la pos, y el segundo cuantos
+            var eliminado = cursos.splice(0, 2);
+            document.write(eliminado + "</br>");
+            for (const valor of cursos) {
+                document.write(valor + "</br>");
+            }
+            document.write("</br>");
+
+            //añadir elementos, poner 0 si no sabemos cuantos vamos a añadir
+            var añadir = cursos.splice(2, 0, "1A", "1B", "1C", "1C");
+            for (const valor of cursos) {
+                document.write(valor + "</br>");
+            }
+            document.write("</br>");
+
+            //borrar e insertar a la vez
+            cursos.splice(0, 1, 2, 0, "Bach1A", "Bach1B", "Bach2A", "Bach2B");
+            for (const valor of cursos) {
+                document.write(valor + "</br>");
+            }
+            document.write("</br>");
+
+            //metodo indexof para saber la posicion de un elemento, sino está devuelve -1
+            var index1 = cursos.indexOf("Bach1A");
+            var index2 = cursos.indexOf("awela");
+            document.write("Posición verdadera: " + index1 + " Posicion incorrecta: " + index2);
+            document.write("</br>" + "</br>");
+
+            //Copia de array incorrecta
+            var miArray = [1, 2, 3];
+            var otroArray = miArray;
+            otroArray[1] = "0";
+            document.write(miArray[1]);
+            document.write("</br>" + "</br>");
+
+            //Copia de array correcta
+            var miArray = [1, 2, 3];
+            var otroArray = miArray.slice();
+            otroArray[1] = "0"
+            document.write(miArray[1]);
+            document.write("</br>" + "</br>");
+
+            //Metodo split para dividir cadenas en partes y crear un array
+            var cademaDividida = document.write('Podemos usar el split para lo que queramos'.split(' '));
+
+
+
+
+
+        </script>
+    </body>
+
+    </html>

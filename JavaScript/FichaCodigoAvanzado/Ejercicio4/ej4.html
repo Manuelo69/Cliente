@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ej 3</title>
+    <link href="form2.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+    <script type="text/javascript" src="ej3.js"></script>
+</head>
+
+<body>
+    <form name="Formulario" method="post" action="Ejercicio2_1.html">
+        <fieldset>
+            <legend>Numero maximo permitido 10000</legend>
+            <label>Número 1:
+                <input type="number" id="num1" aplaceholder="introduzca un numero" max="10000">
+            </label>
+            <label>Número 2:
+                <input type="number" id="num2" aplaceholder="introduzca un numero" max="10000">
+            </label>
+            <select id="ope">
+                <option value="+"> + </option>
+                <option value="-"> - </option>
+                <option value="*"> * </option>
+                <option value="/"> / </option>
+            </select>
+            <br><br>
+            <label>
+                <input type="button" value="RESULTADO" id="boton">
+            </label>
+            <br><br>
+            <label>
+                La suma es: <input type="text" readonly id="res">
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>

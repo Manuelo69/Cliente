@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario 1</title>
+    <link href="form1.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+</head>
+<body>
+    <h2>HOTEL WAKALINGONDON</h2>
+    <form name="Formulario" method="post" action="form2.html" 
+    oninput="precio.value = (reserva.value*120)*num.value">
+        <fieldset>
+            <legend><b>Reserva</b></legend>
+            <label><b>Fecha:</b>
+                <input type="date" required autofocus>
+            </label>
+            <label><b>Nº de noches:</b>
+                <input type="number" id="num" placeholder="Maximo de 7" min="1" max="7" required>
+            </label>
+            <label>
+                <b>Habitaciones a reservar: (precio noche 120)</b>
+                <input type="number" id="reserva"  min="1">
+            </label>
+            <label >
+                <b>Precio total: </b>
+                <output name="precio" ></output> euros
+            </label>
+            <label> <input type="submit"></label>
+        </fieldset>      
+    </form>
+</body>
+</html>

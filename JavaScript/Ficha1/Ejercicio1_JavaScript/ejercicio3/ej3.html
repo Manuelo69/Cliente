@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplo nan</title>
+    <link href="form2.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+    <script type="text/javascript" src="ej1.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //declaramos la primero operacion para ver si 10 es igual a 10
+        var operacion1 = (10 == 10);
+        alert(`La operacion 10 == 10 es ${operacion1}`);
+        //comparamos si es estrictamente igual
+        var operacion2 = (10 === 10);
+        alert(`La operacion 10 === 10 es ${operacion2}`);
+        //vemos que pasa si no son iguales de forma estricta
+        var operacion3 = (10 === 10.0);
+        alert(`La operacion 10 === 10.0 es ${operacion3}`);
+        //Comprobamos si son iguales las cadenas
+        var operacion4 = ("Laura" == "laura");
+        alert(`La operacion Laura == laura es ${operacion4}`);
+        //Comprobamos si una es mayor que otra
+        var operacion5 = ("Laura" > "laura");
+        alert(`La operacion Laura > laura es ${operacion5}`);
+        var operacion6 = ("Laura" < "laura");
+        alert(`La operacion Laura < laura es ${operacion6}`);
+        //Comparamos un string y un numero
+        var operacion7 = ("123" == 123);
+        alert(`La operacion "123" == 123 es ${operacion7}`);
+        //comprobamos si son del mismo tipo
+        var operacion8 = ("123" === 123);
+        alert(`La operacion "123" === 123 es ${operacion8}`);
+        //comprobamos pasando el String a Int
+        var operacion9 = (parseInt("123") === 123);
+        alert(`La operacion parseInt("123") === 123 es ${operacion9}`);
+    </script>
+</body>
+
+</html>

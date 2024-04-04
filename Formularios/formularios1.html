@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Examen</title>
+    <link href="musica.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+</head>
+
+<body>
+    <h1>MI VIDA ES LA MUSICA</h1>
+    <h4>Por favor, rellene los datos...</h4>
+    <form name="Formulario" method="post" action="Ejercicio2_1.html">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label>Nombre:
+                <input type="text" autofocus required placeholder="introduzca su nombre" max="40">
+            </label>
+            <label>Apellidos:
+                <input type="text" placeholder="introduzca sus apellidos" max="40">
+            </label>
+            <label> Telefono:
+                <input type="tel" pattern="[0-9]{3} [-] [0-9] {6,8}" max="10" placeholder="Entrada. EJ 999-999999">
+            </label>
+            <label>Correo:
+                <input type="email" required max="30" placeholder="Introduzca su direccion de correo">
+            </label>
+            <legend><b>Paises</b></legend>
+            <label><input type="checkbox" name="estado" value="E"> Española</label>
+            <label><input type="checkbox" name="estado" value="I"> Italiana</label>
+            
+            <label> Fecha:
+                <input type="date" value="26-09-2022" min="12-09-2022" max="24-6-2023">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Grupos favoritos:</legend>
+            <label>                 
+                    <select name="grupos" id="grupos">
+                    <option value="AC/DC">AC/DC </option>
+                    <option value="Metallica"> Metallica </option>
+                    <option value="Morat"> Morat </option>
+                    <option value="Lil Bokeron"> Lil Bokeron </option>
+                    <option value="Silaba Crónica"> Silaba Crónica </option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Votacion general de grupos</legend>
+            <label>Votacion AC/DC 
+                <input type="number" min="1" max="10" placeholder="Nota del 1 al 10">
+            </label>
+            <label>Votacion Metallica  
+                <input type="number" min="1" max="10" placeholder="Nota del 1 al 10">
+            </label>
+            <label>Votacion Morat
+                <input type="number" min="1" max="10" placeholder="Nota del 1 al 10">
+            </label>
+            <label>Votacion Lil Bokeron  
+                <input type="number" min="1" max="10" placeholder="Nota del 1 al 10">
+            </label>
+            <label>Votacion Silaba cronica
+                <input type="number" min="1" max="10" placeholder="Nota del 1 al 10">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Subir fichero</legend>
+            <label>Elige un archivo de tu grupo favorito para incluirlo en nuestra base
+                <input type="file" name="adjunto" multiple accept=".pdf,.jpg,.png,.mp4">
+            </label>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

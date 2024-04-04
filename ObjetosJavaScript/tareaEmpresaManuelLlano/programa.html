@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Attributes example</title>
+    <script type="text/javascript" src="clases.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+    <link rel="stylesheet" href="ej1.css">
+    <style>
+        textarea {
+            height: 300px;
+            width: 250px;
+            margin-top: 10px;
+        }
+        img{
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Realizar registro</legend>
+            Introduce nombre <input type="text" id="nom"><br>
+            Introduce cedula <input type="text" id="ced"><br>
+            Introduce edad <input type="number" min="18" max="65" id="edad"><br>
+            ¿Esta casado? <input type="checkbox" id="positivo" value=""><br>
+            Introduce salario <input type="number" id="sal"><br>
+            <input type="button" id="boton1" value="Registrar persona"><br>
+            
+            analista:<input type="radio" id="analista">
+            programador:<input type="radio" id="progra"><br>
+            <div id="oficio"></div>
+            <input type="button" id="boton2" value="Mostrar oficio">
+            <input type="button" id="boton3" value="Registrar oficio">
+
+        </fieldset>
+        <fieldset>
+            <legend>Visualizar empleados</legend>
+            <textarea id="resultado" cols="30" rows="10"></textarea><br>
+            <input type="button" id="boton4" value="visualizar todos">
+            <input type="button" id="boton5" value="visualizar principiantes">
+            <input type="button" id="boton6" value="Subir sueldo senior"><br>
+            <input type="button" id="boton7" value="Visualizar lineas por mes">
+            <input type="button" id="boton8" value="Visualizar clasificacion lineas mes">
+            <input type="button" id="boton10" value="Ver nombres analistas"><br>
+            <div id="nombresAnalistas"></div>
+            <input type="button" id="boton9" value="Visualizar proyectos analista">
+            
+        </fieldset>
+    </form>
+</body>
+
+</html>

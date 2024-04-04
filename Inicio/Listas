@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Listas</title>
+    <h1>Listas</h1>
+</head>
+
+<body>
+    <p>Lista desordenada de colores</p>
+    <ul>
+        <li>Rojo</li>
+        <li>Amarillo</li>
+        <li>Verde</li>
+        <li>Blanco</li>
+        <li>Naranja</li>
+    </ul>
+    <p>Lista de 5 animales de mayor a menor tamaño</p>
+    <ol>
+        <li>Elefante</li>
+        <li>Cebra</li>
+        <li>Oveja</li>
+        <li>Gato</li>
+        <li>Raton</li>
+    </ol>
+    <ul style="list-style-type:disc;">
+        <li>Este es un tipo de punto</li>
+    </ul>
+    <ul style="list-style-type:square;">
+        <li>Este es el otro</li>
+    </ul>
+    <ul style="list-style-type:circle;">
+        <li>Este es otro diferente</li>
+    </ul>
+    <ol start="20">
+        <li>Este sera el numero 20</li>
+        <li>Este el 21</li>
+        <li>Este sera el 22. Y asi sucesivamente</li>
+    </ol>
+    <p> Glosario de siglas</p>
+    <hr>
+    <dl>
+        <dt>CSS</dt>
+        <dd> Cascading Style Sheets</dd>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+        <dt>W3C</dt>
+        <dd>World Wide Web Consortium</dd>
+    </dl>
+    <ol start="1">
+        <li>numero 1</li>
+        <li>numero 2</li>
+        <li>numero 3</li>
+        <li>numero 4</li>
+        <li>numero 5</li>
+    </ol>
+    <ul style="list-style-image:url(diamante.png);">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+</body>
+
+</html>

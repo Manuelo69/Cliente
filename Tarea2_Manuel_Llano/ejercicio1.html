@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Examen</title>
+    <link href="ej1.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+</head>
+
+<body>
+    <h1>PLACAS SOLARES ELMARIANA</h1>
+    <h4>Por favor, rellene los datos...</h4>
+    <form name="Formulario" method="post" action="formularios1.html">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label>Nombre:
+                <input type="text" autofocus required placeholder="introduzca su nombre" max="40">
+            </label>
+            <label>Apellidos:
+                <input type="text" placeholder="introduzca sus apellidos" max="40">
+            </label>
+            <label> Telefono:
+                <input type="tel" pattern="[0-9]{3} [-] [0-9] {6,8}" max="10" placeholder="Entrada. EJ 999-999999">
+            </label>
+            <label>Correo:
+                <input type="email" required max="50" placeholder="Introduzca su direccion de correo">
+            </label>
+            <label> Fecha de nacimiento:
+                <input type="date">
+            </label>
+        </fieldset>
+            <input type="submit">
+    </form>
+
+</body>
+</html>

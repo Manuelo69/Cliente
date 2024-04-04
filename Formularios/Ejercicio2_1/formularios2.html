@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio2_1</title>
+    <link href="form.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+</head>
+
+<body>
+    <h2>DATOS PERSONALES 5 (FORMULARIO)</h2>
+    <h4>Escriba los datos siguientes:</h4>
+    <form name="Formulario" method="post" action="formularios2.html">
+        <fieldset>
+            <legend><b>Datos personales</b></legend>
+            <label><b>Nombre:</b>
+                <input type="text" placeholder="introduzca su nombre" required>
+            </label>
+            <label><b>Apellidos</b>
+                <input type="text" placeholder="Introduce 2 apellidos" required>
+            </label>
+            <label>
+                <b>Edad: </b>
+                <select>
+                    <option value="1"> De 12 a 17 años </option>
+                    <option value="2"> De 18 a 35 años </option>
+                    <option value="3"> De 36 a 65 años </option>
+                    <option value="4"> Mas de 65 años </option>
+                </select>
+            </label>
+            <hr>
+            <label>
+            <b>Peso</b>
+            <input type="number" min="30"> kg
+            </label>
+            <label>
+                <b>Sexo:</b>
+                <input type="radio" name="sexo" value="H"> Hombre
+            </label> 
+            <label>
+                <input type="radio" name="sexo" value="M"> Mujer
+            </label>
+            <b>Estado civil:</b>
+            <label><input type="radio" name="estado" value="S"> Soltero</label>
+            <label><input type="radio" name="estado" value="C"> Casado</label>
+            <label><input type="radio" name="estado" value="O"> Otro</label>
+
+        </fieldset>
+        <fieldset>
+            <legend><b>Aficiones</b></legend>
+            <label><input type="checkbox" name="estado" value="C"> Cine</label>
+            <label><input type="checkbox" name="estado" value="L"> Literatura</label>   
+            <label><input type="checkbox" name="estado" value="T"> Tebeos</label>             
+                <br>
+                <label><input type="checkbox" name="estado" value="D"> Deportes</label>
+                <label><input type="checkbox" name="estado" value="M"> Musica</label>
+                <label><input type="checkbox" name="estado" value="TT"> Television</label>
+        </fieldset>
+        <br>
+        <fieldset>
+           <label> <input type="submit" name="enviar"></label>
+           <label> <input type="reset" name="borrar"></label>
+        </fieldset>
+    </form>
+</body>
+
+</html>

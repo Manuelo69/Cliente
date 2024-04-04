@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ej 3</title>
+    <link href="form2.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+    <script type="text/javascript" src="ej2.js"></script>
+</head>
+
+<body>
+    <form name="Formulario" method="post" action="ej1.html">
+        <fieldset>
+            <legend>Número secreto entre 1 y 100</legend>
+            <label>
+                Generar número secreto <input type="button" value="Generar" id="ran">
+            </label>
+            <br><br>
+            <label>
+                <input type="num" id="adi" placeholder="Introduce un valor entre 1 y 100" min="1" max="100">
+            </label>
+            <br><br>
+            <label>
+                <input type="button" value="enviar" id="comprobar">
+            </label>
+            <label>
+              pistas: <input type="text" readonly id="mensajes">
+            </label>
+        </fieldset>
+    </form>
+</body>
+
+</html>

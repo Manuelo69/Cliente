@@ -1,0 +1,13 @@
+var num = prompt(`Introduce un numero, introduce el decimal con punto`);
+document.write(`El numero parseado ${parseInt(num)}`);
+document.write("</br>");
+document.write(`El redondeo superior del primer numero es ${Math.ceil(parseFloat(num))} `);
+document.write("</br>");
+document.write(`El floor del numero ${Math.floor(parseFloat(num))}`);
+document.write("</br>");
+document.write(`El redondeo del numero es ${Math.round(parseFloat(num))}`);
+document.write("</br>");
+document.write(`El numero con dos decimales ${parseFloat(num).toFixed(2)}`);
+document.write("</br>");
+document.write(`El numero con precision ${parseFloat(num).toPrecision(4)}`);
+document.write("</br>");

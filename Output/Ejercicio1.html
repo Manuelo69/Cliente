@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplo2</title>
+    <link href="form2.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+</head>
+<body>
+    <h3>Calculo Importe de Horas Extra</h3>
+    <form name="division" oninput="total.value = parseInt(numero.value) * parseInt(Precio.value) + parseInt(suplemento.value)">        
+        Numero de horas extra: <input id="numero" type="number" max="30" placeholder="Maximo 30"/> 
+        <br>
+        Precio en euros por hora: <input id="Precio" type="number" max="50" min="20" placeholder="Entre 20 y 50" /> 
+        <br>
+        Suplemento: <input type="number" id="suplemento">
+        <br>
+        <b>Total:</b>
+        <output name="total" for="Suma horas">
+    </form>
+    <hr>
+    <h2>Ejemplo de range y output</h2>
+    <form name="nivel">
+        <input type="range">       
+    </form>
+
+
+</body>
+</html>

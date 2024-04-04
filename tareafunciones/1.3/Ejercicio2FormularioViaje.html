@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio Viaje DAW216</title>
+    <script type="text/javascript" src="ejercicio2formularioviaje.js"></script>
+    <link rel="stylesheet" href="formularioViaje.css">
+</head>
+<body>
+    <h1>Empresa De Viajes DAW216</h1>
+    <form id="formulario">
+        <fieldset>
+            <legend>Presupuesto Viaje</legend>
+        <label><b>Elige el número de estrellas del hotel</b>
+            <select id="estrellas">
+                    <option value="10" label="Hotel 1*">
+                    <option value="20" label="Hotel 2*">
+                    <option value="35" label="Hotel 3*">
+                    <option value="50" label="Hotel 4*">
+                    <option value="100" label="Hotel 5*">
+            </select>
+        </label>
+        <label><b>Nº de noches(El precio varia según la calidad del hotél):</b>
+            <input type="number" id="numNochesHotel" min="0" required/>
+        </label>
+        </fieldset>
+        <fieldset>
+            <legend>Viaje Avión</legend>
+        <label><b>Elige el destino:</b>
+            <select id="ciudad">
+                    <option value="madrid" label="Madrid-200">
+                    <option value="tokio" label="Tokio-500">
+                    <option value="berlin" label="Berlín-70">
+                    <option value="belgica" label="Bélgica-37">
+            </select>
+        </label>
+        <label>Madrid
+            <meter min="0" max="20" low="6" high="12" optimum="15" value="10"></meter>
+        </label>
+        <label>Tokio
+            <meter min="0" max="20" low="6" high="12" optimum="15" value="12"></meter>
+        </label>
+        <label>Berlín
+            <meter min="0" max="20" low="6" high="12" optimum="15" value="3"></meter>
+        </label>
+        <label>Bélgica
+            <meter min="0" max="20" low="6" high="12" optimum="15" value="8"></meter>
+        </label>
+        <label><b>Elige tipo de viaje(ida y vuelta 10% descuento):</b>
+            <select id="tipoVuelo">
+                    <option value="ida" label="Ida">
+                    <option value="vuelta" label="Vuelta">
+                    <option value="idayvuelta" label="ida y vuelta">
+            </select>
+        </label>
+        </fieldset>
+        <fieldset>
+            <legend>Alquiler de coches</legend>
+        <label><b>Quiere alquilar un coche</b><br>
+            <input type="radio" id="si" name="alquilaCoche" value="Sí">Sí</input>
+        </label>
+        <label>
+            <input type="radio" id="no" name="alquilaCoche" value="No">No</input>
+        </label>
+        <label><b>Nº de noches a usar:</b>
+            <input type="number" id="numNochesCoche" min="0" required/>
+        </label>
+        </fieldset>
+        <fieldset>
+            <label>
+                <input class="boton" type="button" id="botonTotal" value="Total"/>
+            </label>
+            <label>
+                <textarea id="tarifaText" readonly></textarea>
+            </label>
+        </fieldset> 
+    </form>
+</body>
+</html>

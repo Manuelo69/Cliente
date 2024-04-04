@@ -1,0 +1,193 @@
+header.cab {
+    margin-top: 20px;
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+}
+
+a{
+    margin-left: 15px;
+    margin-right: 10px;  
+}
+
+h5 {
+    text-align: right;
+}
+
+header {
+    background-color: burlywood;
+}
+
+nav.n1 {
+    margin: auto;
+}
+
+nav {
+    background-color: bisque;
+}
+
+section {
+    background-color: black;
+}
+
+p {
+    background-color: blanchedalmond;
+}
+
+img.i2 {
+    height: 80%;
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+img.i1 {
+    height: 90%;
+    width: 5%;
+    float: left;
+    margin-left: 15px;
+    margin-top: 3px;
+
+}
+
+ol {
+    background-color: blanchedalmond;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+aside {
+    background-color: antiquewhite;
+    margin-left: 220px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    float: right;
+    width: 260px;
+}
+
+article {
+    background-color: green;
+}
+
+footer {
+    background-color: blanchedalmond;
+}
+
+section.c2 {
+    float: right;
+    margin-right: 50px;
+    width: 420px;
+    height: 550px;
+    margin-top: 20px;
+}
+
+section.c1 {
+    float: left;
+    height: 550px;
+    width: 1350px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+header.h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+header.h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+header.h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+article.a1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+article.a2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 155px;
+}
+
+footer.f1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+
+footer.f2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+}
+
+footer.f4 {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 580px;
+    height: 50px;
+}
+
+footer.f3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+p.p1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+p.p2 {
+    margin-left: 20px;
+    margin-right: 320px;
+
+}
+
+p.p3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+p.p4 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+nav.n2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    height: 300px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--la primera parte no estaba declarado el doctype -->
+<html lang="es">
+<!--Añado el lang para que acepte las "ñ" -->
+
+<head>
+	<meta charset="utf-8">
+	<!--Faltaba de poner el meta charset-->
+	<title>Energias renovables</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css" title="miEjemplo" media="all">
+	<!--Hay que quitar una barra que no deja que el link tengo efecto -->
+</head>
+
+<body>
+	<header>
+		<h1>Energias renovables</h1>
+	</header>
+	<nav>
+		<p><a target="blank" href="https://www.ed7.es/">Paneles</a></p>
+		<p><a target="blank" href="https://www.instalenergy.com/">Molinos</a></p>
+		<p><a target="blank" href="https://www.ed7.es/">Centrales</a></p>
+		<p><a target="blank" href="https://www.instalenergy.com/">Biomasa</a></p>
+	</nav>
+	<h1>¿Qué son las Energias renovables?</h1>
+	<!--recomienda poner el elemento h1 en el top de la sección -->
+	<section>
+		<h2>El presente y el futuro</h2>
+		<h3>¿Qué son?</h3>
+		<article>
+			<h3>titulo de parrafo</h3>
+			<!-- El article necesita una marca de titulo entre un h2 o un h6-->
+			<p id="parrafo">Para empezar, vamos a definir qué son las energías renovables. Son aquellas fuentes de
+				energía basadas en
+				la utilización de recursos naturales: el sol, el viento, el agua o la biomasa vegetal o animal. Se
+				caracterizan por no utilizar combustibles fósiles, sino recursos naturales capaces de renovarse
+				ilimitadamente.
+
+				Uno de sus puntos fuertes es que tienen un impacto ambiental muy escaso, pues además de no emplear
+				recursos finitos, no generan contaminantes. </p>
+		</article>
+		<h3>Energía solar</h3>
+		<article>
+			<h3>Titulo de articulo</h3>
+			<!--Otro titulo de artículo-->
+			<p id="parrafo2">La energía solar es aquella que obtenemos del sol. A través de placas solares se absorbe la
+				radiación
+				solar y se transforma en electricidad que puede ser almacenada o volcada a la red eléctrica. También
+				existe la energía solar termoeléctrica, que es aquella que utiliza la radiación solar para calentar un
+				fluido (que puede ser agua), hasta que genere vapor, y accione una turbina que genera electricidad.
+				<!--El id de párrado está repetido dos veces, abajo pongo el id como parrafo2-->
+		</article>
+		<h3>Energía eólica</h3>
+		<article>
+			<h3>Titulo de articulo</h3>
+			<!--Otro article que necesita un h2 o h6 como titulo-->
+			<p id="parrafo3">En el caso de la energía eólica la generación de electricidad se lleva a cabo con la fuerza
+				del viento.
+				Los molinos de viento que están en los parques eólicos son conectados a generadores de electricidad que
+				transforma en energía eléctrica el viento hace girar sus aspas. </p>
+			<!--El id párrafo vuelve a estar duplicado, lo pongo como parrado 3-->
+		</article>
+		<br>
+		<!--Se ponen dos br cerrados, con uno sin cerrar es suficiente -->
+	</section>
+	<h1>Mañana ya será tarde</h1>
+	<aside>
+		<div id="anuncio1">
+			<h2>ACTÚA</h2>
+			<ol type="a" start="4" reversed>
+				<!--El valor "d" no es un valor válido para poner, lo cambio por un numero-->
+				<li>Compara</li>
+				<li>Conciencia</li>
+				<li>Estudia</li>
+				<li>Cambia</li>
+			</ol>
+			<img src="foto.jpg" alt="logo" width="300" title="logo">
+			<!--El valor del width va sin poner el px-->
+		</div>
+
+	</aside>
+	<footer>
+		<h1>Pepito Grillo</h1>
+
+		<h2><a>SOLO ME GUSTA MAQUETAR</a></h2>
+		<!-- habia una etiqueta "a" sin abrir, por lo que se puede o poner completa o borrar-->
+		<br>
+	</footer>
+</body>
+
+</html>

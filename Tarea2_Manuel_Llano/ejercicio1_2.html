@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Examen</title>
+    <link href="ej1.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es" src="pres.js">
+</head>
+
+<body>
+    <h1>PLACAS SOLARES ELMARIANA</h1>
+    <h4>Por favor, rellene los datos...</h4>
+    <form name="Formulario" method="post" action="final.html">
+        <fieldset>
+            <legend>Tipo de instalación:</legend>
+            <label>
+                <select name="ins" id="ins">
+                    <option value="1"> Institucion publica</option>
+                    <option value="2"> Empresa </option>
+                    <option value="3"> Piso comunidad de vecinos </option>
+                    <option value="4"> Aislado de la red</option>
+                </select>
+            </label>
+            <label>Elige tu tipo de almacenamiento de energia:</label>
+            <label>
+                <input type="radio" name="alm" value="con"> Con almacenamiento
+            </label>
+            <label>
+                <input type="radio" name="alm" value="sin"> Sin almacenamiento
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Presupuesto</legend>
+            <label>Escribe el area que tiene tu tejado:
+                <input id="m2" type="number" autofocus required placeholder="introduzca area">
+                m2
+            </label>
+            <hr>
+            <input type="text" readonly id="Total"> euros
+            </label>
+            <label>
+                <input type="button" value="Total" id="Presupuesto">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Inclinacion y consumo</legend>
+            <label>
+                <select name="ins" id="ins">
+                    <option value="5"> 0 grados</option>
+                    <option value="6"> 10 grados </option>
+                    <option value="7"> 25 grados </option>
+                    <option value="8"> 35 grados</option>
+                </select>
+            </label>
+            <label>Introduce tu consume mensual en kWh:
+                <input type="number" placeholder="introduzca consumo">
+            </label>
+            <label>
+                <input type="radio" name="tipo consumo" value="tri"> Monofasica
+            </label>
+            <label>
+                <input type="radio" name="tipo consumo" value="mono"> Trifasica
+            </label>
+        </fieldset>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>

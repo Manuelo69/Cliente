@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>eventos</title>
+    <script type="text/javascript" src="clases.js"></script>
+    <script type="text/javascript" src="ej1.js"></script>
+    <link rel="stylesheet" href="ej1.css">
+</head>
+<style>
+    img {
+        height: 400px;
+        width: 550px;
+    }
+</style>
+
+<body>
+    <FORM>
+        <fieldset>
+            <legend>Crear persona</legend>
+            Introduce nombre: <input type="text" id="nom"><br>
+            Introduce edad: <input type="number" id="eda"><br>
+            Introduce dni: <input type="text" id="dniPer"><br>
+            Introduce genero<select id="genero">
+                <option value="Hombre">H</option>
+                <option value="Mujer">M</option>
+            </select><br>
+            Introduce peso <input type="number" id="pes"><br>
+            Introduce altura <input type="number" id="alt"><br>
+            <input type="button" value="Añadir persona" id="boton1">
+            <input type="button" value="Guardar persona" id="boton6">
+        </fieldset>
+        <fieldset>
+            <legend>Implementar métodos</legend>
+            <textarea id="resultado" cols="30" rows="10"></textarea><br>
+            <input type="button" id="boton2" value="Ver informacion">
+            <input type="button" id="boton3" value="Calcular IMC">
+            <input type="button" id="boton4" value="Comprobar mayores de edad">
+            <input type="button" id="boton5" value="Cambiar Dni">
+        </fieldset>
+    </FORM>
+
+</body>
+
+</html>

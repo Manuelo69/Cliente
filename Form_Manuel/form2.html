@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario 2</title>
+    <link href="form1.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+</head>
+
+<body>
+    <form name="Formulario" method="post" action="form3.html">
+        <fieldset>
+            <legend><b>Datos del titular</b></legend>
+            <label><b>Nombre</b>
+                <input type="text" autofocus required placeholder="introduzca su nombre" max="40">
+            </label>
+            <label><b>Apellidos:</b>
+                <input type="text" required placeholder="introduzca 2 apellidos" max="40">
+            </label>
+            <label><b>Direccion</b>
+                <input type="text" required placeholder="introduzca su direccion" max="40">
+            </label>
+            <label><b>Codigo Postal:</b>
+                <input type="text" placeholder="Codigo de 5 digitos" pattern="[0-9]{5}">
+            </label>
+            <label><b>Ciudad</b>
+                <input type="text" required>
+            </label>
+            <label>
+                <b>Pais </b>
+                <select>
+                    <option value="1" label="España"></option>
+                    <option value="2" label="Inglaterra"></option>
+                    <option value="3" label="Francia"></option>
+                    <option value="4" label="Alemania"></option>
+                    <option value="5" label="Rusia"></option>
+                    <option value="6" label="Mexico"></option>
+                    <option value="7" label="Bélgica"></option>
+                    <option value="8" label="Otro"></option>
+                </select>
+            </label>
+            <label>Si eligió la opcion de otro, introduzca el nombre de su pais:
+                <input type="text">
+            </label>
+            <label><b>Numero de telefono:</b>
+                <input type="text" placeholder="Numero español" pattern="[0-9]{9}">
+            </label>
+            <label><b>Correo: </b>
+                <input type="text" required placeholder="introduzca su correo" max="40">
+            </label>
+            <label> <input type="submit"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Extras</legend>
+            <textarea name="textarea" rows="10" cols="50">Observaciones</textarea>
+            <label><b>¿Desea cuna en su habitacion?</b>
+                <input type="checkbox" name="estado" value="C"></label>
+            <label><b>Aceptar terminos y condiciones</b>
+                <input type="checkbox" name="estado" value="C" required></label>
+            <label><b>Aceptar politicas de cancelacion</b>
+                <input type="checkbox" name="estado" value="C" required></label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label> <input type="submit"></label>
+            <label> <input type="reset" name="borrar"></label>
+        </fieldset>
+    </form>
+</body>
+</html>

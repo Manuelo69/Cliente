@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Array</title>
+    <link href="Est.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+    <script type="text/javascript" src="array.js"></script>
+</head>
+
+<body>
+    <script>
+        /*Formas de declarar un String*/
+        var objetoString1 = new String("Holabb");
+        var objetoString2 = String("Adiosbb");
+        var objetoString3 = "GhanaGana";
+        /* Acceder a un caracter individual*/
+        var caracter = objetoString1.charAt(5);
+        /*Comparar cadenas con operadores menor que y mayor que*/
+        if (objetoString1 < objetoString2) {
+            
+        }
+        /*Convertir todo el String en mayusculas y minusculas*/
+        var mayusculas = objetoString1.toUpperCase();
+        var minusculas = objetoString1.toLowerCase();
+        /*devuelve el valor de un string*/
+        var valor = objetoString1.valueOf();
+        /*devolver longitud de la cadena */
+        var longitud = objetoString2.length();
+        /*Unir cadenas*/
+        var unidas = objetoString1.concat(objetoString2);
+        /*ver si la cadena contiene el parametro*/
+        objetoString1.includes("hola"); //true or false
+        /*determinar si una cadena de texto termina con los caracteres de una cadena indicada*/
+        objetoString1.endsWith("bb");
+        /*devuelve el índice, dentro del objeto String que realiza la llamada*/
+        objetoString2.indexOf("i") //2
+        /*etorna un iterador de todos los resultados de ocurrencia en una cadena de texto*/
+        objetoString3.matchAll();
+        /*método rellena la cadena actual con una cadena determinada */
+        objetoString1.padEnd(15,"./") // Holabb././././.
+        /*Lo mismo que el anterior pero desde el principio*/
+        objetoString2.padStart(13,"foo") // foofooadiosbb
+        /*para repetir la cadena */
+        objetoString3.repeat(2) //GhanaganaGhanagana
+        /*to String, charcodeAt,lastindexof,substring,split,replace,trim*/
+        /*devuelve los caracteres de una cadena que comienzan en una localización especificada y de acuerdo al número de caracteres que se especifiquen.*/
+        objetoString1.substring(2,2) //la
+        /*método devuelve un número indicando el valor Unicode del carácter en el índice proporcionado.*/
+        objetoString2.charCodeAt(3) // xd
+        /*Hace la busqueda desde el final*/
+        objetoString1.lastIndexOf("b") //6
+        objetoString1.lastIndexOf("b", 2) //5
+        /*método devuelve una cadena que representa al objeto especificado.*/
+        objetoString1.toString(); //Holabb
+        /*El método split() divide un objeto de tipo String en un array (vector) de cadenas mediante la separación de la cadena en subcadenas.*/
+        
+
+    </script>
+</body>
+
+</html>

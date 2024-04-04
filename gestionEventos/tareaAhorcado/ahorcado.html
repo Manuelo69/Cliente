@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>eventos</title>
+    <script type="text/javascript" src="ahorcado.js"></script>
+    <link rel="stylesheet" href="ej1.css">
+</head>
+<style>
+    .bordes {
+        border: 2px black solid;
+        width: 20px;
+        height: 20px;
+        display: inline;
+        margin-left: 6px;
+        margin-top: 10px;
+        padding: 8px;
+    }
+</style>
+
+<body>
+    <form id="formulario">
+        <fieldset>
+            <legend>elige la categoria</legend>
+            <div id="seleccion">
+
+            </div>
+            <br>
+            <input type="button" value="Elegir categoria" id="boton1">
+        </fieldset>
+        <fieldset>
+            <legend>Palabra para adivinar</legend>
+            <div id="letrasPalabra"></div>
+        </fieldset>
+        <fieldset>
+            <legend>Letras usadas y oportunidades</legend>
+            <div id="info">
+                <label id="oportunidades">Intentos: 0</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Avisos</legend>
+            <label id="avisos"></label>
+        </fieldset>
+</body>
+
+</html>

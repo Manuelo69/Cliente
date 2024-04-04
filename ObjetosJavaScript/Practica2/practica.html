@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Attributes example</title>
+    <script type="text/javascript" src="DatosPersonales.js"></script>
+    <script type="text/javascript" src="Cuentacorriente.js"></script>
+    <script type="text/javascript" src="practica.js"></script>
+    <link rel="stylesheet" href="ej1.css">
+    <style>
+        textarea {
+            height: 300px;
+            width: 250px;
+            margin-top: 10px;
+        }
+
+        div {
+            height: 300px;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Crear Persona</legend>
+            <input type="text" id="nom" placeholder="Introduce nombre"><br>
+            <input type="text" id="dni" placeholder="Introduce DNI"><br>
+            <input type="text" id="dir" placeholder="Introduce Direccion" max="9"><br>
+            <input type="text" id="tel" placeholder="Introduce Telefono" max="9"><br><br>
+            <input type="button" id="boton1" value="Crear persona">
+        </fieldset>
+        <fieldset>
+            <legend>Crear Cuenta</legend>
+            <input type="text" id="num" placeholder="Introduce numero de cuenta"><br>
+            <input type="number" id="saldo" placeholder="Introduce saldo"><br><br>
+            <input type="button" id="boton2" value="Crear Cuenta">
+        </fieldset>
+        <fieldset>
+            <legend>Operaciones genericas</legend>
+            <textarea id="resultado"></textarea><br><br>
+            <input type="button" id="boton3" value="Aumentar saldo">
+            <input type="button" id="boton4" value="Retencion 10%">
+            <input type="button" id="boton5" value="Visualizar clientes">
+        </fieldset>
+        <fieldset>
+            <legend>Operaciones especificas</legend>
+            <input type="number" id="dineroCambio" placeholder="Introduce cantidad"><br>  
+            <input type="text" id="nombreCambio" placeholder="Introduce nombre del cliente"><br><br>  
+            <input type="button" id="boton6" value="Aumentar saldo del cliente">
+            <input type="button" id="boton7" value="Retencion saldo del cliente">
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario 3</title>
+    <link href="form1.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+</head>
+
+<body>
+    <form name="Formulario" method="post" action="form3.html">
+        <fieldset>
+            <legend><b>Metodo de pago</b></legend>
+            <label><b>Opciones</b>
+                <select required>
+                    <option value="2" label="Tarjeta"></option>
+                    <option value="1" label="Paypal"></option>
+                </select>
+            </label>
+            <label><b>Numero de tarjeta:</b>
+                <input type="text" required placeholder="introduzca con el formato correspondiente"
+                pattern="[0-9]{4}[-][0-9]{4}[-][0-9]{4}[-][0-9]{4}">
+            </label>
+            <label><b>Fecha de caducidad</b>
+                <input type="text" required placeholder="introduzca la fecha" pattern="[0-9]{2}[/][0-9]{2}">
+            </label>
+            <label><b>Codigo de seguridad:</b>
+                <input type="text" placeholder="Codigo de 3 digitos" pattern="[0-9]{3}">
+            </label>
+            <label><b>Titular de la Tarjeta</b>
+                <input type="text" required>
+            </label>
+        </fieldset>
+            <label> <input type="image" class="ima" src="enviar.png" alt="enviar"></label>
+    </form>
+</body>
+
+</html>

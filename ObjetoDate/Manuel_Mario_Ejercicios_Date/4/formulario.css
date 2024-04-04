@@ -1,0 +1,58 @@
+body {
+    background-color: #c3bfeb;
+}
+form {
+    width: 550px;
+    height: 860px;
+    margin: 0 0 0 0 ;
+    padding: 50px 60px;
+    background-color: #a3a2eb;
+    border-radius: 20px;
+}
+fieldset {
+    padding: 0 20px 20px;
+    margin: 0 0 30px ;
+    border: 2px solid #ffffff;
+    background: #B8B8B8 ;
+    border-radius: 10px;
+}
+legend {
+    color: #ffffff;
+    background: #220de6;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+    margin: 0;
+    width: 10em;
+    border: 2px solid #240066;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    float: left;
+    clear: left;
+    text-align: left;
+    width: 100%;
+    padding: .4em 0 0 0;
+    margin: .15em 0 0 0;
+}
+
+.boton{
+    background-color: #220de6;
+    color: white;
+}
+
+.boton:hover{
+    background-color: #0c007c;
+    color: white;
+}
+
+#resultado{
+    width: 400px;
+    height: 450px;
+}
+
+h1 {
+    color: #220de6;;
+}

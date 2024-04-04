@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Preferencias gastronomicas</title>
+    <link href="form2.css" rel="stylesheet" type="text/css">
+    <meta name="autor" content="Manuel Llano Rebanal">
+    <meta name="Copyright" content="free">
+    <meta name="language" content="es">
+</head>
+
+<body>
+  
+    <form name="Formulario" method="post" action="formularios2_2.html">
+        <h1>Preferencias gastronomicas</h1>
+        <fieldset>
+            <legend><b>Paises</b></legend>
+            <label><input type="checkbox" name="estado" value="E"> Española</label>
+            <label><input type="checkbox" name="estado" value="I"> Italiana</label>
+            <label><input type="checkbox" name="estado" value="F"> Francesa</label>
+            <hr>
+            <label>
+                <b>Edad:</b>
+                <select>
+                    <option value="1"> De 12 a 17 años </option>
+                    <option value="2"> De 18 a 35 años </option>
+                    <option value="3"> De 36 a 65 años </option>
+                    <option value="4"> Mas de 65 años </option>
+                </select>
+            </label>
+            <hr>   
+            <label>    
+                <legend><b>Platos que te gustan</b></legend>      
+                <select name="combo" multiple>
+                    <optgroup label="italiana">
+                        <option value="1" label="Pizza"></option>
+                        <option value="2" label="macarrones"></option>
+                        <option value="3" label="Espagueti"></option>
+                    </optgroup>
+                    <optgroup label="francesa">
+                        <option value="4" label="Cruasan"></option>
+                        <option value="5" label="Foie grass"></option>
+                        <option value="6" label="Baguette"></option>
+                    </optgroup>
+                    <optgroup label="Española">
+                        <option value="7" label="Tortilla"></option>
+                        <option value="8" label="Paella"></option>
+                        <option value="9" label="Torreznos"></option>
+                    </optgroup>
+                </select>
+            </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label> <input type="submit" name="enviar"></label>
+                <label> <input type="reset" name="borrar"></label>
+            </fieldset>
+    </form>
+</body>
+
+</html>

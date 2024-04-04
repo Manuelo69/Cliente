@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio individual</title>
+    <script type="text/javascript" src="ejercicio4.js"></script>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <form id="formulario">
+        <fieldset>
+            <legend>Convertir milisegundos</legend>
+            <label>
+                <input type="number" id="cantidad" placeholder="cantidad">
+            </label>
+            <label>
+                <select name="" id="unidad">
+                    <option value="segundos">s</option>
+                    <option value="minutos">m</option>
+                    <option value="horas">h</option> 
+                    <option value="dias">d</option>
+                </select>
+            </label>
+            <label>
+                <select name="" id="metodo">
+                    <option value="mu">mu</option>
+                    <option value="um">um</option>
+                </select>
+            </label>
+            <label>
+                <input type="button" id="convertir" value="Realizar conversion"/>
+            </label>
+        </fieldset>
+        <label>
+            <textarea id="resultado" readonly></textarea>
+        </label>
+        </fieldset>
+    </form>
+</body>
+</html>
